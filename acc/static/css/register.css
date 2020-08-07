@@ -33,6 +33,11 @@ body {
 	color: white;
 }
 
+.right li {
+	color: #4EA8B5;
+	font-size: 25px;
+}
+
 .left input[type='submit']{
 	border: 1px solid white;
 	color: white;
