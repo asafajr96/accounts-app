@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/login.css' %}">
+    <title>Login</title>
+</head>
+<body>
+	<div class="grid-container">
+		<div class="left">
+			<h1>Sign In</h1>
+			<form method="POST" action="">
+			<input type="text" name="username-txt" placeholder="Username">
+			<input type="password" name="password-txt" placeholder="Password">
+			<input type="submit" value="Sign In">
+		</form>
+		</div>
+
+		<div class="right">
+		<h1>Hi There!</h1>
+		<p>Don't have an account?</p>
+		<a href="{% url 'register' %}"><input type="submit" value="Sign Up"></a>
+		</div>
+	</div>
+</body>
+</html>

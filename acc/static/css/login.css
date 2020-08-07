@@ -2,13 +2,12 @@
 
 body {
 	font-family: 'Ubuntu', sans-serif;
+	background-image: linear-gradient(#4EB5A2, #4EA8B5);
 }
 
-
 .left {
-	height: 600px;
-	color: white;
-	background-image: linear-gradient(#4EB5A2, #4EA8B5);
+	height: 599px;
+	color: #4EA8B5;
 	margin-left: -8px;
 	margin-top: -8px;
 	padding-top: 1em;
@@ -16,27 +15,24 @@ body {
 	padding-right: 1em;
 	padding-bottom: 1em;
 	text-align: center;
-	width: 30%;
+	width: 66%;
     float: left;
+    background-color: white;
 }
 
 .left h1 {
 	font-family: 'PT Sans', sans-serif;
 	font-weight: 900;
 	font-size: 55px;
-	margin-top: 3em;
-	color: white;
+	margin-top: 2em;
+	color: #4EA8B5;
 }
 
-.left p {
-	font-size: 25px;
-	color: white;
-}
 
 .left input[type='submit']{
-	border: 1px solid white;
 	color: white;
-	background-color: transparent;
+	background-color: #4EA8B5;
+	border: none;
 	border-radius: 40px;
 	width: 200px;
 	height: 50px;
@@ -48,7 +44,7 @@ body {
 .right input[type='submit']{
 	border: 1px solid white;
 	color: white;
-	background-color: #4EA8B5;
+	background-color: transparent;
 	border-radius: 40px;
 	width: 200px;
 	height: 50px;
@@ -64,7 +60,7 @@ body {
     background-color: #4EB5A2;
 }
 
-.right input {
+.left input {
 	border: none;
 	color: black;
 	background-color: #E5E5E5;
@@ -78,32 +74,38 @@ body {
 .right {
 	color: white;
 	text-align: center;
-	width: 67%;
+	width: 31%;
+	height: 620px;
     float: left;
+    background-image: linear-gradient(#4EB5A2, #4EA8B5);
 }
 
 .right h1{
 	font-family: 'PT Sans', sans-serif;
 	font-weight: 900;
 	font-size: 55px;
-	color: #4EA8B5;
-	margin-top: 1.5em;
+	color: white;
+	margin-top: 3.5em;
 }
 
-.right form {
+.left form {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
 
+.right p{
+	margin-bottom: 2.5em;
+}
+
 @media screen and (max-width: 1024px) {
 
 	.right {
-		width: 56%;
+		width: 40%;
   	 }
 
   	 .left{
-  	 	width:40%;
+  	 	width:56%;
   	 }
 }
 

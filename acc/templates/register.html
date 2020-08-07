@@ -8,21 +8,23 @@
     <title>Register Account</title>
 </head>
 <body>
-	<div class="left">
-		<h1>Welcome Back!</h1>
-		<p>Already have an account?</p>
-		<input type="submit" value="Sign In">
-	</div>
-	<div class="right">
-	<h1>Create Account</h1>
-	<form method="POST" action="">
-		{% csrf_token %}
-		{{form.username}}
-		{{form.email}}
-		{{form.password1}}
-		{{form.password2}}
-		<input type="submit" value="Sign Up">
-	</form>
+	<div class="grid-container">
+		<div class="left">
+			<h1>Welcome Back!</h1>
+			<p>Already have an account?</p>
+			<a href="{% url 'login' %}"><input type="submit" value="Sign In"></a>
+		</div>
+		<div class="right">
+		<h1>Create Account</h1>
+		<form method="POST" action="">
+			{% csrf_token %}
+			{{form.username}}
+			{{form.email}}
+			{{form.password1}}
+			{{form.password2}}
+			<input type="submit" value="Sign Up">
+		</form>
+		</div>
 	</div>
 </body>
 </html>
